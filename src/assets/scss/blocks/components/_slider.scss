@@ -1,0 +1,83 @@
+// .slider {
+//   &__scale {
+//     height: 0.25rem;
+//     background: $neutral-8;
+//     border-radius: 2px;
+
+//     &_active {
+//       width: 50%;
+//       background: $primary;
+//       display: flex;
+//       flex-direction: row-reverse;
+//     }
+//   }
+
+//   &__button {
+//     display: inline-block;
+//     padding: 0.75rem;
+//     border-radius: 50%;
+//     background: $white;
+//     box-shadow: $elevation-tight-1;
+//     transform: translate(100%, -45%);
+//     cursor: pointer;
+//   }
+// }
+
+.slider {
+  padding: {
+    left: 1.31rem;
+    right: 1.75rem;
+  }
+
+  &__scale {
+    width: 100%;
+    appearance: none;
+    height: 0.25rem;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: $white;
+      box-shadow: $elevation-tight-1;
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: $white;
+      box-shadow: $elevation-tight-1;
+      cursor: pointer;
+    }
+  }
+
+  &__value {
+    display: inline-block;
+    margin-top: 0.6rem;
+    color: #c4c4c4;
+
+    @include font-attributes($font-size: $font-slider, $line-height: $heights-slider, $font-weight: $weight-slider);
+
+    &_start {
+      margin-left: -0.31rem;
+    }
+
+    &_end {
+      float: right;
+      margin-right: -0.75rem;
+    }
+
+    &_current {
+      color: $black;
+      text-align: end;
+
+      margin: {
+        top: 0;
+        bottom: 0.6rem;
+      }
+    }
+  }
+}

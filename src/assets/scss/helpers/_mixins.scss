@@ -1,0 +1,26 @@
+@mixin font-style($size-mobile, $heights-mobile, $size-tablet, $heights-tablet, $size-desktop, $heights-desktop) {
+  font-size: $size-mobile;
+  line-height: $heights-mobile;
+
+  @media screen and (min-width: 576px) {
+    font-size: $size-tablet;
+    line-height: $heights-tablet;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: $size-desktop;
+    line-height: $heights-desktop;
+  }
+}
+
+@mixin font-attributes($font-size, $line-height, $font-weight) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin checkbox-background-icon($background-icon) {
+  background-image: url("~../img/icons/#{$background-icon}.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

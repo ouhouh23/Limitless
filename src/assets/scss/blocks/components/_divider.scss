@@ -1,0 +1,54 @@
+.divider {
+  border-bottom: 2px solid $neutral-7;
+
+  &_top {
+    border-bottom: none;
+    border-top: 2px solid $neutral-7;
+  }
+
+  &_upper {
+    border-bottom: none;
+    position: relative;
+    margin-bottom: 12.5vw;
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 11.25rem;
+    }
+
+    &::after {
+      content: "";
+      width: 50%;
+      height: 12.5vw;
+      border-left: 2px solid $neutral-2;
+      position: absolute;
+      top: 100%;
+
+      @media screen and (min-width: 1440px) {
+        height: 11.25rem;
+      }
+    }
+  }
+
+  &_lower {
+    border-bottom: none;
+    position: relative;
+    margin-top: 12.5vw;
+
+    @media screen and (min-width: 1440px) {
+      margin-top: 11.25rem;
+    }
+
+    &::before {
+      content: "";
+      width: 50%;
+      height: 12.5vw;
+      border-left: 2px solid $neutral-2;
+      position: absolute;
+      bottom: 100%;
+
+      @media screen and (min-width: 1440px) {
+        height: 11.25rem;
+      }
+    }
+  }
+}

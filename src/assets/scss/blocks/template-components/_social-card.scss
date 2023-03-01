@@ -1,0 +1,19 @@
+.social-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.25rem 3.5rem;
+  background: $primary-light-10;
+  color: $black;
+
+  border: {
+    top: 0.25rem solid transparent;
+    bottom: 0.25rem solid $primary;
+  }
+
+  &__item {
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+    color: $primary;
+  }
+}

@@ -1,0 +1,44 @@
+.display_large {
+  @include font-style($font-display-large...);
+}
+
+.display_small {
+  @include font-style($font-display-small...);
+}
+
+.heading_xxl {
+  @include font-style($font-heading-xxl...);
+}
+
+.heading_xl {
+  @include font-style($font-heading-xl...);
+}
+
+.heading_large {
+  @include font-style($font-heading-large...);
+}
+
+.heading_md {
+  @include font-style($font-heading-md...);
+}
+
+.heading_sm {
+  @include font-style($font-heading-sm...);
+}
+
+.heading_xs {
+  font-size: $font-heading-xs;
+  line-height: $heights-heading-xxl;
+}
+
+.heading_heavy {
+  font-weight: $weight-heading-heavy;
+}
+
+.heading_regular {
+  font-weight: $weight-heading-regular;
+}
+
+.heading_light {
+  font-weight: $weight-heading-light;
+}

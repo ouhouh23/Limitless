@@ -1,0 +1,99 @@
+.tooltip {
+  position: relative;
+  width: fit-content;
+
+  &__body {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    display: none;
+    color: $neutral-5;
+    border: 1px solid $neutral-5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: $elevation-tight-2;
+    margin-top: 0.5rem;
+    background: $white;
+    z-index: 1;
+
+    &::before {
+      @extend %border-beak;
+
+      border-color: $neutral-5;
+      padding: 0.35rem;
+      transform: rotate(-135deg);
+      left: calc(50% - 0.3rem);
+      top: -0.44rem;
+    }
+  }
+
+  &__text {
+    color: $neutral-2;
+    margin: 0 0.5rem;
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
+
+  /* Tooltip top */
+  &_top {
+    .tooltip__body {
+      bottom: 100%;
+
+      margin: {
+        top: 0;
+        bottom: 0.5rem;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+        bottom: -0.44rem;
+        top: auto;
+      }
+    }
+  }
+
+  /* Tooltip left */
+  &_left {
+    .tooltip__body {
+      right: 100%;
+      left: auto;
+      bottom: 50%;
+      transform: translateY(50%);
+
+      margin: {
+        top: 0;
+        right: 0.5rem;
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+        right: -0.44rem;
+        left: auto;
+        bottom: calc(50% - 0.3rem);
+        top: auto;
+      }
+    }
+  }
+
+  &_right {
+    .tooltip__body {
+      left: 100%;
+      bottom: 50%;
+      transform: translateY(50%);
+
+      margin: {
+        top: 0;
+        left: 0.5rem;
+      }
+
+      &::before {
+        transform: rotate(135deg);
+        left: -0.44rem;
+        bottom: calc(50% - 0.3rem);
+        top: auto;
+      }
+    }
+  }
+}

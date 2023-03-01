@@ -1,0 +1,207 @@
+.input {
+  --label-display: block;
+  --label-color: #{$black};
+  --input-background: #{$white};
+  --placeholder-background: transparent;
+  --input-border-color: #{$neutral-3};
+  --border-placeholder-color: #{$primary};
+  --compact-border-color-swapped: #{$neutral-5};
+  --compact-placeholder-border-color-swapped: #{$primary};
+  --textarea-min-height: 7.25rem;
+  --dropdown-button-indent: 2.8rem;
+
+  /* Default input */
+  &__label {
+    margin-left: 1rem;
+  }
+
+  &__required {
+    display: inline-block;
+    margin-left: -0.31rem;
+    color: $error;
+  }
+
+  &__body {
+    background: $white;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+
+    /* Filled input */
+    border: 1px solid $neutral-3;
+    color: $black;
+
+    /* Default input */
+    &:placeholder-shown {
+      border-color: $primary;
+      background: transparent;
+    }
+
+    &::placeholder {
+      color: $neutral-4;
+    }
+
+    /* Active input */
+    &:focus {
+      border: 2px solid $primary;
+      outline: none;
+      background: white;
+
+      &::placeholder {
+        color: $black;
+      }
+    }
+  }
+
+  &__message {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    margin-left: 1rem;
+  }
+
+  /* Disabled input */
+  &_disabled {
+    --label-display: none;
+    --input-background: #{$neutral-9};
+    --placeholder-background: #{$neutral-9};
+    --input-border-color: #{$primary};
+    --compact-placeholder-border-color-swapped: transparent;
+
+    .input__mark {
+      display: none;
+    }
+
+    .input__body {
+      border-color: $primary;
+      background: $neutral-9;
+      cursor: not-allowed;
+    }
+  }
+
+  /* Success input */
+  &_success {
+    --label-color: #{$success};
+    --input-border-color: #{$success};
+    --border-placeholder-color: #{$success};
+    --compact-border-color-swapped: #{$success};
+    --compact-placeholder-border-color-swapped: #{$success};
+    --input-background: #{$white};
+    --placeholder-background: #{$white};
+
+    .input__body {
+      border-color: $success;
+      background: $success-light;
+    }
+  }
+
+  /* Warning input */
+  &_warning {
+    --label-color: #{$warning};
+    --input-border-color: #{$warning};
+    --border-placeholder-color: #{$warning};
+    --compact-border-color-swapped: #{$warning};
+    --compact-placeholder-border-color-swapped: #{$warning};
+    --input-background: #{$white};
+    --placeholder-background: #{$white};
+
+    .input__body {
+      border-color: $warning;
+      background: $warning-light;
+    }
+  }
+
+  /* Error input */
+  &_error {
+    --label-color: #{$error};
+    --input-border-color: #{$error};
+    --border-placeholder-color: #{$error};
+    --compact-border-color-swapped: #{$error};
+    --compact-placeholder-border-color-swapped: #{$error};
+    --input-background: #{$white};
+    --placeholder-background: #{$white};
+
+    .input__body {
+      border-color: $error;
+      background: $error-light;
+    }
+  }
+
+  /* Info input */
+  &_info {
+    --label-color: #{$info};
+    --input-border-color: #{$info};
+    --border-placeholder-color: #{$info};
+    --compact-border-color-swapped: #{$info};
+    --compact-placeholder-border-color-swapped: #{$info};
+    --input-background: #{$white};
+    --placeholder-background: #{$white};
+
+    .input__body {
+      border-color: $info;
+      background: $info-light;
+    }
+  }
+
+  /* Input compact */
+  &_compact {
+    position: relative;
+
+    --textarea-min-height: 4.5rem;
+    --dropdown-button-indent: 1.6rem;
+
+    .input__label {
+      font-size: $font-paragraph-sm;
+      line-height: $heights-paragraph-sm;
+      position: absolute;
+      padding: 0 0.25rem;
+      margin-left: 0.75rem;
+      white-space: nowrap;
+      background: $white;
+      border-radius: 1rem;
+      display: var(--label-display);
+      color: var(--label-color);
+    }
+
+    .input__body {
+      font-size: $font-paragraph-md;
+      line-height: $heights-paragraph-md;
+      margin-bottom: 0;
+      padding: {
+        top: 1rem;
+        bottom: 1rem;
+      }
+
+      background: var(--input-background);
+      border-color: var(--input-border-color);
+
+      &:placeholder-shown {
+        border-color: var(--border-placeholder-color);
+        background: var(--placeholder-background);
+      }
+
+      &:focus {
+        background: $white;
+      }
+    }
+  }
+
+  /* Input textarea */
+  &_textarea {
+    display: flex;
+    flex-direction: column;
+
+    .input__body {
+      min-height: var(--textarea-min-height);
+    }
+  }
+
+  /* Input dropdown */
+  &_dropdown {
+    .input__body {
+      margin-bottom: 0;
+    }
+  }
+}

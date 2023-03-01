@@ -1,0 +1,164 @@
+.toggle {
+  width: fit-content;
+
+  &__input {
+    display: none;
+  }
+
+  @include font-attributes(
+    $font-size: $font-toggle,
+    $line-height: $heights-toggle,
+    $font-weight: $weight-toggle
+  );
+
+  --toggle-background: #{$black};
+  --toggle-border-color: transparent;
+  --toggle-shadow-hover: none;
+  --toggle-shadow-active: none;
+  --toggle-background-disabled: #{$primary-light-20};
+  --toggle-background-disabled-off: #{$neutral-8};
+  --toggle-text-opacity: 0.4;
+  --toggle-button-disabled: #{$white};
+  --toggle-border-disabled: transparent;
+
+  &__body {
+    width: 3.5rem;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    background: $primary;
+  }
+
+  &__label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      .toggle__body {
+        background: $primary-hover;
+      }
+    }
+
+    &:active {
+      .toggle__body {
+        background: $primary;
+      }
+    }
+  }
+
+  &__button {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    border-radius: 50%;
+    background: $white;
+    transition: transform 0.5s;
+    transform: translateX(100%);
+  }
+
+  &__text {
+    margin-left: 0.75rem;
+    cursor: inherit;
+  }
+
+  /* Toggle tight */
+  &_tight {
+    --toggle-background: #{$primary-light-50};
+    --toggle-border-color: #{$primary-light-50};
+    --toggle-shadow-hover: 0 0 0 0.63rem #{$primary-light-10};
+    --toggle-shadow-active: 0 0 0 0.63rem #{$primary-light-20};
+    --toggle-background-hover: #{$primary-light-10};
+    --toggle-background-active: #{$primary-light-20};
+    --toggle-background-disabled: #{$neutral-8};
+    --toggle-background-disabled-off: #{$primary-light-20};
+    --toggle-text-opacity: 1;
+    --toggle-button-disabled: #f9cdc3;
+    --toggle-border-disabled: #{$primary-light-20};
+
+    .toggle__body {
+      background: $neutral-7;
+      padding: 0;
+      width: 3rem;
+      height: 1rem;
+    }
+
+    .toggle__button {
+      background: $primary;
+      margin-top: -0.25rem;
+    }
+
+    .toggle__label:hover {
+      .toggle__body {
+        background: $neutral-7;
+      }
+
+      .toggle__button {
+        box-shadow: var(--toggle-shadow-hover);
+      }
+    }
+
+    .toggle__label:active {
+      .toggle__body {
+        background: $neutral-7;
+      }
+
+      .toggle__button {
+        box-shadow: var(--toggle-shadow-active);
+      }
+    }
+  }
+
+  /* Toggle off */
+  &_off {
+    --toggle-background-disabled: var(--toggle-background-disabled-off);
+    --toggle-button-disabled: #{$white};
+
+    .toggle__body {
+      background: var(--toggle-background);
+    }
+
+    .toggle__button {
+      border: 1px solid var(--toggle-border-color);
+      background: $white;
+      transform: translateX(0);
+    }
+
+    .toggle__label:hover {
+      .toggle__body {
+        background: var(--toggle-background);
+      }
+
+      .toggle__button {
+        box-shadow: var(--toggle-shadow-hover);
+      }
+    }
+
+    .toggle__label:active {
+      .toggle__body {
+        background: var(--toggle-background);
+      }
+
+      .toggle__button {
+        box-shadow: var(--toggle-shadow-active);
+      }
+    }
+  }
+
+  /* Toggle disabled */
+  &_disabled {
+    pointer-events: none;
+
+    .toggle__text {
+      opacity: var(--toggle-text-opacity);
+    }
+
+    .toggle__body {
+      background: var(--toggle-background-disabled);
+    }
+
+    .toggle__button {
+      border-color: var(--toggle-border-disabled);
+      background: var(--toggle-button-disabled);
+    }
+  }
+}

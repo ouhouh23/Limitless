@@ -1,0 +1,97 @@
+.chip {
+  display: inline-block;
+  color: $white;
+  background: $primary;
+  text-transform: uppercase;
+  border: 0.12rem solid transparent;
+  border-radius: 2rem;
+  cursor: pointer;
+
+  --chip-color-inverted: #{$primary};
+  --chip-border-color: #{$primary};
+
+  &:hover {
+    background: $primary-hover;
+  }
+
+  &:active {
+    background: $primary;
+  }
+
+  &__text {
+    margin: 0 0.5rem;
+  }
+
+  /* Chip sizes */
+  &_large {
+    padding: 0.38rem 1.13rem;
+
+    @include font-attributes(
+      $font-size: $font-chip-large,
+      $line-height: $heights-chip-large,
+      $font-weight: $weight-chip
+    );
+  }
+
+  &_medium {
+    padding: 0.26rem 0.88rem;
+
+    @include font-attributes(
+      $font-size: $font-chip-medium,
+      $line-height: $heights-chip-medium,
+      $font-weight: $weight-chip
+    );
+
+    .chip__text {
+      margin: 0 0.25rem;
+    }
+  }
+
+  &_small {
+    padding: 0.13rem 0.63rem;
+
+    @include font-attributes(
+      $font-size: $font-chip-small,
+      $line-height: $heights-chip-small,
+      $font-weight: $weight-chip
+    );
+
+    .chip__text {
+      margin: 0 0.25rem;
+    }
+  }
+
+  /* Chip disabled */
+  &_disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background: $primary-light-50;
+
+    --chip-color-inverted: #{$primary-light-50};
+    --chip-border-color: #{$primary-light-50};
+  }
+
+  /* Chip bordered */
+  &_bordered {
+    background: $white;
+    color: var(--chip-color-inverted);
+    border: 1px solid var(--chip-border-color);
+
+    &:hover {
+      background: $white;
+      color: $primary-hover;
+      border-color: $primary-hover;
+    }
+
+    &:active {
+      background: $white;
+      color: $primary;
+      border-color: $primary;
+    }
+  }
+
+  /* Chip thick */
+  &_thick {
+    border: 0.12rem solid var(--chip-border-color);
+  }
+}

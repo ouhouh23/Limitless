@@ -1,0 +1,12 @@
+.social {
+  margin-right: 1rem;
+  color: $primary;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &_dark {
+    color: $black;
+  }
+}

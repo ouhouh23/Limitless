@@ -1,0 +1,78 @@
+.tag {
+  display: inline-block;
+  padding: 0.5rem 0.75rem 0.25rem;
+  border-radius: 1rem;
+  width: fit-content;
+  color: $white;
+  text-transform: uppercase;
+
+  @include font-attributes($font-size: $font-tag, $line-height: $heights-tag, $font-weight: $weight-tag);
+
+  /* Tags solid */
+  &_primary {
+    background: $primary;
+
+    --tag-background-inverted: #{$primary-light-10};
+    --tag-color-inverted: #{$primary};
+    --tag-border-color: #{$primary};
+  }
+
+  &_secondary {
+    background: $secondary;
+
+    --tag-background-inverted: #{$secondary-light-10};
+    --tag-color-inverted: #{$secondary};
+    --tag-border-color: #{$secondary};
+  }
+
+  &_info {
+    background: $info;
+
+    --tag-background-inverted: #{$info-light};
+    --tag-color-inverted: #{$info};
+    --tag-border-color: #{$info};
+  }
+
+  &_success {
+    background: $success;
+
+    --tag-background-inverted: #{$success-light};
+    --tag-color-inverted: #{$success};
+    --tag-border-color: #{$success};
+  }
+
+  &_warning {
+    background: $warning;
+
+    --tag-background-inverted: #{$warning-light};
+    --tag-color-inverted: #{$warning};
+    --tag-border-color: #{$warning};
+  }
+
+  &_error {
+    background: $error;
+
+    --tag-background-inverted: #{$error-light};
+    --tag-color-inverted: #{$error};
+    --tag-border-color: #{$error};
+  }
+
+  /* Tags inverted */
+  &_inverted {
+    background: var(--tag-background-inverted);
+    color: var(--tag-color-inverted);
+  }
+
+  /* Tags outlined */
+  &_outlined {
+    background: $white;
+    color: var(--tag-color-inverted);
+    border: 1px solid var(--tag-border-color);
+  }
+
+  /* Tags borderless */
+  &_borderless {
+    background: $white;
+    color: var(--tag-color-inverted);
+  }
+}

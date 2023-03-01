@@ -1,0 +1,9 @@
+.badge {
+  display: inline-block;
+  background: $error;
+  color: $white;
+  padding: 0.12rem 0.31rem;
+  border-radius: 0.75rem;
+
+  @include font-attributes($font-size: $font-badge, $line-height: $heights-badge, $font-weight: $weight-badge);
+}

@@ -1,0 +1,45 @@
+.documentation {
+  display: flex;
+  margin-top: 2rem;
+
+  &__body {
+    margin: 0 2.5rem;
+    overflow: hidden;
+  }
+
+  &__element {
+    margin-bottom: 2rem;
+  }
+
+  &__heading {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  &__container {
+    background: $accent-7;
+    padding: 2rem 0;
+
+    &_light {
+      background: $white;
+    }
+  }
+
+  &__item {
+    margin: {
+      left: 1rem;
+      bottom: 1rem;
+    }
+  }
+
+  &__sidebar {
+    margin-left: 1rem;
+    border-radius: 2rem;
+
+    & ul {
+      list-style-type: initial;
+      padding-left: 40px;
+      color: $white;
+    }
+  }
+}

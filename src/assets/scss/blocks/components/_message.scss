@@ -1,0 +1,68 @@
+.message {
+  display: flex;
+  padding: 0.38rem 1rem;
+  background: $white;
+
+  &__icon {
+    align-self: flex-start;
+    margin-top: 0.12rem;
+  }
+
+  &__text {
+    margin: 0 auto 0 0.5rem;
+
+    @include font-attributes(
+      $font-size: $font-message,
+      $line-height: $heights-message,
+      $font-weight: $weight-message
+    );
+  }
+
+  &_success {
+    background: $success-light;
+
+    .message__text {
+      color: $success;
+    }
+
+    .message__icon {
+      filter: $filter-color-success;
+    }
+  }
+
+  &_warning {
+    background: $warning-light;
+
+    .message__text {
+      color: $warning;
+    }
+
+    .message__icon {
+      filter: $filter-color-warning;
+    }
+  }
+
+  &_error {
+    background: $error-light;
+
+    .message__text {
+      color: $error;
+    }
+
+    .message__icon {
+      filter: $filter-color-error;
+    }
+  }
+
+  &_info {
+    background: $info-light;
+
+    .message__text {
+      color: $info;
+    }
+
+    .message__icon {
+      filter: $filter-color-info;
+    }
+  }
+}

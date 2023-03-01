@@ -1,0 +1,52 @@
+.announcement {
+  display: flex;
+  background: $white;
+  color: $primary;
+  padding: 0.8rem 1rem 0;
+
+  &__text {
+    text-align: center;
+
+    margin: {
+      right: 1.55rem;
+      bottom: 0.8rem;
+    }
+  }
+
+  &__button {
+    box-shadow: none;
+    margin-bottom: 0.63rem;
+  }
+
+  &__icon {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    @media screen and (min-width: 576px) {
+      padding: {
+        left: 2.5rem;
+        right: 1rem;
+      }
+    }
+  }
+
+  &_dark {
+    background: $secondary;
+    color: $white;
+
+    .announcement__button {
+      background: $secondary;
+      color: $white;
+      border-color: $white;
+    }
+  }
+}

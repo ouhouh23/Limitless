@@ -1,0 +1,180 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $white;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__text {
+    padding-top: 1.5rem;
+  }
+
+  &__tags {
+    display: flex; /* Без него странный зазор */
+    flex-wrap: wrap;
+  }
+
+  &__tag {
+    margin: 0 1rem 1.5rem 0;
+  }
+
+  &__tag:last-of-type {
+    margin-right: 0.5rem;
+  }
+
+  &__heading {
+    color: $neutral-2;
+  }
+
+  &__paragraph {
+    margin: 0.75rem 0 1.5rem;
+    color: $neutral-2;
+  }
+
+  &__price {
+    color: $neutral-2;
+    margin-bottom: 1.5rem;
+
+    @include font-attributes(
+      $font-size: $font-card-price,
+      $line-height: $heights-card-price,
+      $font-weight: $weight-card-price
+    );
+  }
+
+  &__buttons {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__button-group {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+    display: flex;
+  }
+
+  &__button {
+    margin-right: 1rem;
+  }
+
+  &__icon-group {
+    margin-bottom: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__icon {
+    margin-right: 0.5rem;
+    height: 1.5rem;
+    display: inline-block;
+  }
+
+  &__icon:last-of-type {
+    margin-right: 0;
+  }
+
+  &__caption {
+    color: $neutral-2;
+    margin-bottom: 1.5rem;
+
+    @include font-attributes(
+      $font-size: $font-card-caption,
+      $line-height: $heights-card-caption,
+      $font-weight: $weight-card-caption
+    );
+  }
+
+  /* Card horizontal */
+  &_horizontal {
+    @media screen and (min-width: 576px) {
+      max-width: 100%;
+      flex-direction: row;
+
+      .card__image {
+        max-width: 50%;
+        width: auto;
+      }
+
+      .card__text {
+        margin-bottom: -1.5rem;
+        padding-top: 0;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
+      }
+
+      .card__buttons {
+        margin-bottom: 0.63rem;
+      }
+
+      .card__button {
+        align-self: flex-start;
+      }
+    }
+  }
+
+  /* Card horizontal small */
+  &_horizontal-small {
+    .card__image {
+      @media screen and (min-width: 576px) {
+        align-self: flex-start;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  /* Card horizontal cutted */
+  &_horizontal-cutted {
+    @media screen and (min-width: 576px) {
+      overflow: hidden;
+
+      .card__buttons {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &_commercial {
+    max-width: 24.13rem;
+    align-items: flex-start;
+
+    margin: {
+      left: auto;
+      right: auto;
+    }
+
+    .card__container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card__button {
+      position: absolute;
+      bottom: 1rem;
+      transform: translateX(-50%);
+      left: 50%;
+      white-space: nowrap;
+    }
+
+    .card__price {
+      display: inline-block;
+      margin: 1.5rem 1rem 0 0;
+      font-size: $font-card-price-large;
+      line-height: $heights-card-price-large;
+      color: $secondary;
+
+      &_old {
+        color: $neutral-3;
+        text-decoration-line: line-through;
+        text-decoration-thickness: 2px;
+      }
+    }
+  }
+}

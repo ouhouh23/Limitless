@@ -1,0 +1,79 @@
+/* Modal */
+.modal {
+  &__header {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  &__title {
+    @include font-attributes(
+      $font-size: $font-modal,
+      $line-height: $heights-modal,
+      $font-weight: $weight-modal
+    );
+  }
+
+  &__body {
+    min-height: 16.5rem;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding: 1.13rem 1.5rem 0;
+  }
+
+  &__group {
+    display: flex;
+
+    margin: {
+      left: 1.75rem;
+      bottom: 1.13rem;
+    }
+  }
+
+  &__button {
+    margin-left: 1rem;
+  }
+
+  /* Modal success */
+  &_success {
+    .modal__divider {
+      border-color: $success;
+    }
+
+    .modal__button {
+      background: $success;
+    }
+  }
+
+  &_warning {
+    .modal__divider {
+      border-color: $warning;
+    }
+
+    .modal__button {
+      background: $warning;
+    }
+  }
+
+  &_error {
+    .modal__divider {
+      border-color: $error;
+    }
+
+    .modal__button {
+      background: $error;
+    }
+  }
+
+  &_info {
+    .modal__divider {
+      border-color: $info;
+    }
+
+    .modal__button {
+      background: $info;
+    }
+  }
+}

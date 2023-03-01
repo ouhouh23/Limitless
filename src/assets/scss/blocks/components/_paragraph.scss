@@ -1,0 +1,35 @@
+.paragraph_large {
+  @include font-style($font-paragraph-large...);
+}
+
+.paragraph_base {
+  font-size: $font-paragraph-lg;
+  line-height: $heights-paragraph-lg;
+}
+
+.paragraph_sm {
+  font-size: $font-paragraph-md;
+  line-height: $heights-paragraph-md;
+}
+
+.paragraph_xs {
+  font-size: $font-paragraph-sm;
+  line-height: $heights-paragraph-sm;
+}
+
+.paragraph_tiny {
+  font-size: $font-paragraph-xs;
+  line-height: $heights-paragraph-xs;
+}
+
+.paragraph_heavy {
+  font-weight: $weight-paragraph-heavy;
+}
+
+.paragraph_regular {
+  font-weight: $weight-paragraph-regular;
+}
+
+.paragraph_light {
+  font-weight: $weight-paragraph-light;
+}

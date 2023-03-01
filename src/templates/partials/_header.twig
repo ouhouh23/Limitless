@@ -1,0 +1,47 @@
+{% set navigation = { 
+  './index.html': 'Home',
+  './about-us.html': 'About Us',
+  './blog.html': 'Blog',
+  './contact-us.html': 'Contact Us',
+  './docs.html': 'Components List' 
+} %}
+
+<header class="navigation-container wrapper">
+  <div class="navigation">
+    <a href="./index.html" class="logo logo_small">
+      <img 
+        src="img/logo.svg" 
+        alt="site logo" 
+        class="logo__image"
+        width="54"
+        height="54" 
+      />
+
+      <span class="logo__text">Limitless</span>
+    </a>
+
+    <div class="navigation__group">  
+      <nav class="navigation__container">
+        <ul class="navigation__menu">
+          {% for url, name in navigation %}
+            <li>
+              <a
+                class="link link_large link_primary navigation__item{% if name == page %} navigation__item_active{% endif %}" 
+                href="{{ url }}">{{ name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <button
+        type="button"
+        class="button button_small button_primary navigation__button" 
+      >
+        donate
+      </button>
+    </div>
+
+    <i class="navigation__mobile-button fa-solid fa-bars"></i>
+  </div>
+</header>

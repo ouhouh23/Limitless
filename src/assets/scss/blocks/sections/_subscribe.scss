@@ -1,0 +1,23 @@
+.subscribe {
+  @extend %section-indent;
+
+  max-width: 63rem;
+  padding: {
+    left: 1rem;
+    right: 1rem;
+  }
+
+  &__heading {
+    text-align: center;
+    color: $primary;
+    margin-bottom: 3rem;
+  }
+
+  .subscribe__button {
+    max-width: 13rem;
+
+    @media screen and (min-width: 576px) {
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{% extends "../layouts/_base.twig" %}
+
+{% set page = 'Shop' %}
+
+{% block content %}
+  {% include '../partials/_header.twig' %}
+  
+  <section class="shop">
+    <div class="card card_horizontal shop__card">
+      <img 
+        src="img/cards/card-image-14.png"
+        alt="card image"
+        class="card__image shop__item"
+        width="386"
+        height="386"
+        id="image-test" 
+      >
+
+      <div class="card__text shop__text">
+        <h1 class="heading_xl heading_heavy">
+          Mens Limitless T-Shirt
+        </h1>
+
+        <p class="paragraph_base paragraph_regular card__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet at orci est 
+          dapibus leo justo, tincidunt vitae, proin. Est, iaculis nam aenean et turpis. Vel, 
+          senectus sed urna dictum eu, parturient ipsum. Urna lectus auctor morbi tellus sapien neque.
+        </p>
+
+        <div class="shop__filter shop__filter_sized">
+          <div class="caps caps_heavy">size</div>
+
+          <span class="caps caps_heavy shop__parameter">s</span>
+
+          <span class="caps caps_heavy shop__parameter">m</span>
+
+          <span class="caps caps_heavy shop__parameter shop__parameter_active">l</span>
+        </div>
+
+        <div class="shop__filter shop__filter_colored">
+          <div class="caps caps_heavy">color</div>
+          
+          <span class="caps caps_heavy shop__parameter shop__parameter_orange">orange</span>
+
+          <span class="caps caps_heavy shop__parameter shop__parameter_white shop__parameter_active">white</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop__container">
+      <div class="shop__gallery">
+        <img 
+          src="img/cards/card-image-14.png"
+          alt="card image"
+          class="shop__image shop__image_active"
+          width="80"
+          height="80"
+        >
+
+        <img 
+          src="img/cards/card-image-15.png"
+          alt="card image"
+          class="shop__image"
+          width="80"
+          height="80"
+        >
+
+        <img 
+          src="img/cards/card-image-16.png"
+          alt="card image"
+          class="shop__image"
+          width="80"
+          height="80"
+        >
+      </div>
+
+      <div class="shop__buttons">
+        <div class="counter">
+          <span class="counter__button counter__button_reduce">-</span>
+
+          <span class="counter__value shop__parameter">1</span>
+
+          <span class="counter__button counter__button_increase">+</span>
+        </div>
+
+        <button  
+          type="button" 
+          class="button button_medium button_primary shop__button"
+        >
+            add to cart
+        </button>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+   

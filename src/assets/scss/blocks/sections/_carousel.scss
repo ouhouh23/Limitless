@@ -1,0 +1,51 @@
+.carousel {  /* carousel-group. button. button left, right */
+  @extend %section-indent;
+
+  max-width: 90rem;
+  overflow: hidden;
+
+  &__gallery {
+    display: flex;
+    margin-bottom: 1.5rem;
+    transform: translateX(-42%);
+    transition: transform 1s;
+
+    --image-counter: 2;
+    --carousel-inversion: -42;
+    --carousel-image-width: 65;
+
+    @media screen and (min-width: 576px) {
+      transform: translateX(-12%);
+      margin-bottom: 2.5rem;
+
+      --carousel-inversion: -12;
+      --carousel-image-width: 52;
+    }
+  }
+
+  &__image {
+    margin-right: 4%;
+    max-width: 60%;
+
+    @media screen and (min-width: 576px) {
+      margin-right: 2.8%;
+      max-width: 49%;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-right: 2.5rem;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__button {
+    box-shadow: none;
+
+    &_left {
+      margin-right: 1rem;
+    }
+  }
+}

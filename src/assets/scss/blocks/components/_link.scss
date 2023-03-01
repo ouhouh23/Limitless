@@ -1,0 +1,125 @@
+.link {
+  font-weight: $weight-link;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: baseline;
+
+  &__arrow {
+    margin-left: 0.25rem;
+  }
+
+  &_large {
+    font-size: $font-link-large;
+    line-height: $heights-link-lg;
+
+    --link-arrow-indent: 0.12rem;
+
+    .link__arrow {
+      font-size: 0.85rem;
+    }
+  }
+
+  &_medium {
+    font-size: $font-link-medium;
+    line-height: $heights-link-md;
+
+    --link-arrow-indent: 1px;
+
+    .link__arrow {
+      font-size: 0.75rem;
+    }
+  }
+
+  &_small {
+    font-size: $font-link-small;
+    line-height: $heights-link-sm;
+
+    --link-arrow-indent: 0;
+
+    .link__arrow {
+      font-size: 0.63rem;
+    }
+  }
+
+  /* Link visited */
+  // &:visited {
+  //   color: $accent-7;
+  //   border-color: $accent-7;
+  // }
+
+  /* Link primary */
+  &_primary {
+    color: $primary;
+
+    &:hover {
+      color: $primary-hover;
+    }
+
+    &:active {
+      color: $primary;
+    }
+
+    --link-color-hover: #{$primary-hover};
+    --link-color-active: #{$primary};
+    --link-color-disabled: #{$primary-light-50};
+    --link-border-color: #{$primary};
+  }
+
+  /* Link secondary */
+  &_secondary {
+    color: $secondary-default;
+
+    &:hover {
+      color: $secondary-hover;
+    }
+
+    &:active {
+      color: $secondary-active;
+    }
+
+    --link-color-hover: #{$secondary-hover};
+    --link-color-active: #{$secondary-active};
+    --link-color-disabled: #{$secondary-light-50};
+    --link-border-color: #{$secondary-default};
+  }
+
+  /* Link disabled */
+  &_disabled {
+    pointer-events: none;
+    color: var(--link-color-disabled);
+
+    --link-border-color: var(--link-color-disabled);
+  }
+
+  /* Link arrow left */
+  &_left {
+    flex-direction: row-reverse;
+
+    .link__arrow {
+      transform: rotate(180deg);
+      padding-top: var(--link-arrow-indent);
+
+      margin: {
+        left: 0;
+        right: 0.25rem;
+      }
+    }
+  }
+
+  /* Link underlined */
+  &_underlined {
+    border-bottom: 2px solid var(--link-border-color);
+
+    .link__arrow {
+      display: none;
+    }
+
+    &:hover {
+      border-color: var(--link-color-hover);
+    }
+
+    &:active {
+      border-color: var(--link-color-active);
+    }
+  }
+}

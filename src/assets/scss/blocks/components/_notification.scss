@@ -1,0 +1,16 @@
+.notification {
+  display: inline-block;
+  position: relative;
+  color: $neutral-5;
+  font-size: $font-notification;
+
+  &_active {
+    @extend %active-item;
+
+    color: $neutral-3;
+  }
+
+  &_marked::after {
+    @extend %indicator;
+  }
+}

@@ -1,0 +1,79 @@
+{% extends "../layouts/_base.twig" %}
+
+{% set page = 'Our story' %}
+
+{% block content %}
+  {% include '../partials/_header.twig' %}
+
+  <section class="section section_default section_tall">
+    <div class="section__text">
+      <h1 class="heading_xxl heading_heavy section__heading">
+        It started with an idea.
+      </h1>
+
+      <p class="paragraph_base paragraph_heavy section__paragraph">
+        Orci bibendum tellus eget risus. Habitasse lorem orci viverra sed sagittis, 
+        risus elementum. Nulla leo sed sed in quam. Posuere mauris nulla massa platea 
+        ornare dignissim eu. Tellus lacus, neque erat aenean sed faucibus sit. 
+        In venenatis quam et vel scelerisque feugiat in vel. Non, egestas justo, 
+        lacinia sem facilisis eget semper. Arcu elementum tempor proin vitae sed. 
+        Praesent sit dui augue tincidunt volutpat vulputate ligula. Tellus aliquet 
+        suscipit senectus ipsum urna, nisl nunc ultricies massa. Elementum, 
+        ornare massa quisque aenean consequat amet. Diam enim, ac fermentum, 
+        ullamcorper id placerat ac, dictumst. Suspendisse blandit posuere id 
+        pharetra, ultrices consectetur enim ut.
+      </p>
+
+      <p class="paragraph_base paragraph_heavy section__paragraph">
+        Nunc imperdiet at turpis sollicitudin vulputate velit. Commodo augue dolor ornare 
+        purus lobortis dui. Nisl mollis sodales porta vitae nulla pharetra amet, duis. 
+        Rhoncus tincidunt sollicitudin et sed iaculis senectus ornare sagittis. 
+        Est leo sed euismod id odio commodo consequat. Elit magna vitae ullamcorper posuere 
+        sagittis, sed natoque. Eget eget vulputate porttitor massa porttitor egestas donec. 
+        Id tellus parturient sit aliquam neque condimentum auctor.
+      </p>
+
+      <form action="./story.html">
+        <button  
+        type="submit" 
+        class="button button_large button_primary section__button">
+
+        Our mission
+        </button>
+      </form>
+    </div>
+
+    <img 
+      src="img/section/section-2.png"
+      alt="section image"
+      class="section__image"
+      width="700"
+      height="700"
+    >
+  </section>
+
+  <section class="offer wrapper">
+    <div class="offer__container">
+      <h2 class="heading_xl heading_heavy offer__heading">
+        Become a part of our continuing story.
+      </h2>
+
+      <div class="offer__buttons">
+        <button
+          type="button"
+          class="button button_medium button_primary button_ghost offer__button" 
+        >
+          Get involved
+        </button>
+
+        <button
+          type="button"
+          class="button button_medium button_primary button_ghost offer__button" 
+        >
+          Donate
+        </button>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+   

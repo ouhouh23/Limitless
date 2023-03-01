@@ -1,0 +1,173 @@
+.collection {
+  @extend %section-indent;
+
+  background: $white;
+
+  padding: {
+    left: 1rem;
+    right: 1rem;
+  }
+
+  &__header {
+    max-width: 65rem;
+    margin: 0 auto;
+  }
+
+  &__container {
+    max-width: 81.7rem;
+    margin: 2.5rem auto 4rem;
+    display: grid;
+    grid-gap: 4rem 2.5rem;
+
+    @media screen and (min-width: 576px) {
+      grid-template-columns: auto auto;
+
+      margin: {
+        top: 5rem;
+        bottom: 5rem;
+      }
+    }
+
+    @media screen and (min-width: 1085px) {
+      grid-auto-flow: column;
+      justify-content: space-between;
+    }
+
+    &_double {
+      margin: {
+        top: -1rem;
+        bottom: 2rem;
+      }
+
+      @media screen and (min-width: 576px) {
+        margin-top: -2.5rem;
+      }
+
+      @media screen and (min-width: 1085px) {
+        grid-template-columns: 18.5rem 18.5rem;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__carousel-group {
+    margin: {
+      top: 4rem;
+      bottom: -0.5rem;
+    }
+
+    @media screen and (min-width: 576px) {
+      margin-bottom: -3rem;
+    }
+  }
+
+  &_vertical {
+    .collection__container {
+      margin-bottom: 0;
+      row-gap: 2.5rem;
+      grid-template-columns: auto;
+
+      @media screen and (min-width: 1085px) {
+        grid-template-columns: auto auto;
+        grid-auto-flow: dense;
+      }
+    }
+  }
+
+  &_rounded {
+    .collection__container {
+      justify-content: space-between;
+      max-width: 41rem;
+      grid-template-columns: auto;
+
+      @media screen and (min-width: 1085px) {
+        grid-template-columns: 22.2% 22.2% 22.2% 22.2%;
+        max-width: 81.7rem;
+      }
+
+      &_triple {
+        margin-bottom: 0;
+
+        @media screen and (min-width: 1085px) {
+          grid-template-columns: 18.13rem 18.13rem 18.13rem;
+          justify-content: center;
+        }
+      }
+    }
+
+    .collection__heading {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .collection__image {
+      border-radius: 50%;
+      margin-bottom: 2rem;
+      width: auto;
+    }
+
+    .collection__text {
+      padding-top: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .collection__paragraph {
+      margin: {
+        top: auto;
+        bottom: 0;
+      }
+    }
+  }
+
+  &_inlined {
+    .collection__button {
+      margin-top: 2rem;
+    }
+
+    .collection__image {
+      width: auto;
+    }
+
+    @media screen and (min-width: 1085px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 84rem;
+      margin: 0 auto;
+
+      .collection__header {
+        margin: 0 1rem;
+        max-width: 29.7rem;
+        text-align: left;
+      }
+
+      .collection__container {
+        margin: 0;
+        grid-gap: 2.5rem 4rem;
+      }
+
+      .collection__card {
+        flex-direction: row;
+      }
+
+      .collection__image {
+        max-width: 6.5rem;
+        margin-right: 1.5rem;
+      }
+
+      .collection__button {
+        margin: 1rem 0 0;
+        font-size: $font-buttons-sm;
+        line-height: $heights-buttons-md;
+        padding: 0.31rem 0.56rem;
+      }
+    }
+  }
+}

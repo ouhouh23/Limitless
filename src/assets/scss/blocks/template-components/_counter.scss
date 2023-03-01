@@ -1,0 +1,19 @@
+.counter {
+  display: flex;
+  align-items: baseline;
+
+  &__button {
+    display: inline-block;
+    cursor: pointer;
+
+    @include font-attributes($font-size: $font-counter, $line-height: $heights-counter, $font-weight: $weight-counter);
+
+    &_reduce {
+      margin-right: 0.88rem;
+    }
+
+    &_increase {
+      margin-left: 0.88rem;
+    }
+  }
+}

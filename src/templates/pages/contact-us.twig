@@ -1,0 +1,105 @@
+{% extends "../layouts/_base.twig" %}
+
+{% set page = 'Contact Us' %}
+
+{% block content %}
+  <section class="hero hero_tight wrapper">
+    {% include '../partials/_header.twig' %}
+
+    <div class="hero__body">
+      <div class="hero__text">
+        <h1 class="heading_xxl heading_heavy">
+          Contact Us
+        </h1>
+
+        <p class="paragraph_base paragraph_heavy hero__paragraph">
+          We'd love to get in touch with you! Send us a message below and
+          we'll contact you in the next 24 hours. Thanks!
+        </p>
+
+        <form>
+          <div class="input input_compact form__item">
+            <label class="paragraph_sm paragraph_heavy input__label" for="contact-form-1">
+              Name
+              <span class="input__required">*</span>
+            </label>
+
+            <input 
+              type="text" 
+              name="text-input" 
+              placeholder="Jane Pollock"
+              class="input__body paragraph_heavy" 
+              id="contact-form-1" 
+            />
+          </div>
+
+          <div class="input input_compact form__item">
+            <label class="paragraph_sm paragraph_heavy input__label" for="contact-form-2">
+              Email address
+              <span class="input__required">*</span>
+            </label>
+
+            <input 
+              type="email" 
+              name="text-input" 
+              placeholder="jane@example.com"
+              class="input__body paragraph_heavy" 
+              id="contact-form-2" 
+            />
+          </div>
+
+          <div class="input input_compact input_textarea form__item">
+            <label class="paragraph_sm paragraph_heavy input__label" for="contact-form-3">
+              Message
+              <span class="input__required">*</span>
+            </label>
+
+            <textarea name="textarea" placeholder="How can we help?" class="input__body paragraph_heavy" id="contact-form-3"></textarea>           
+          </div>
+
+          <button 
+            type="button"
+            class="button button_medium button_primary form__button" 
+          >
+            Send
+          </button>
+        </form>
+      </div>
+
+      <img 
+        src="img/hero/hero-2.png" 
+        alt="hero image" 
+        class="hero__image"
+        width="846"
+        height="630"
+      />
+    </div>
+  </section> 
+
+  <section class="socials">
+    <h2 class="heading_xl heading_heavy socials__heading">
+      Stay in touch
+    </h2>
+
+    <div class="socials__container">
+      <a href="#" class="social-card socials__item">
+        <i class="social-card__item fa-brands fa-instagram"></i>
+
+        <h3 class="heading_large heading_heavy">Instagram</h3>
+      </a>
+
+      <a href="#" class="social-card socials__item">
+        <i class="social-card__item fa-brands fa-facebook-f"></i>
+
+        <h3 class="heading_large heading_heavy">facebook</h3>
+      </a>
+
+      <a href="#" class="social-card socials__item">
+        <i class="social-card__item fa-solid fa-envelope"></i>
+
+        <h3 class="heading_large heading_heavy">Email</h3>
+      </a>
+    </div>
+  </section>
+{% endblock %}
+   

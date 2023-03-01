@@ -1,0 +1,666 @@
+{% extends "../layouts/_base.twig" %}
+
+{% set page = 'Home' %}
+
+{% block content %}
+  <article class="announcement wrapper">
+    <div class="announcement__container">
+      <p class="paragraph_base paragraph_regular announcement__text">
+        Purus consectetur feugiat consectetur imperdiet ante ac pulvinar nec.
+      </p>
+
+      <button
+        type="button"
+        class="button button_small button button_primary button_ghost announcement__button"
+      >
+        learn more
+      </button>
+    </div>
+
+    <i class="announcement__icon fa-solid fa-xmark"></i>
+  </article>
+
+  <section class="hero hero_illustrated wrapper">
+    {% include '../partials/_header.twig' %}
+
+    <div class="hero__text">
+      <span class="caps caps_heavy hero__caption">Limitless</span>
+
+      <h1 class="display_small heading_heavy">
+        Enabling emerging adults to adapt and succeed.
+      </h1>
+
+      <div class="hero__buttons">
+        <button
+          type="button"
+          class="button button_medium button_primary button_ghost hero__button"
+        >
+          get involved
+        </button>
+
+        <button
+          type="button"
+          class="button button_medium button_primary hero__button"
+        >
+          donate
+        </button>
+      </div>
+    </div>
+
+    <a href="#" class="scroll-button hero__scroll">
+      <img src="img/icons/scroll-button.svg" alt="scroll button" class="scroll-button__icon" />
+
+      <span class="scroll-button__text">
+        Scroll
+      </span>
+    </a>
+  </section>
+
+  <section class="section section_tight">
+    <div class="section__text">
+      <h2 class="display_small heading_heavy section__heading">
+        About <span class="section__caption">Limitless</span>
+      </h2>
+
+      <div class="text-block section__block">
+
+        <p class="paragraph_base paragraph_light text-block__text">
+          Convallis est lorem lorem vel consectetur. Mauris leo fermentum, tellus sollicitudin 
+          viverra feugiat risus blandit laoreet. Auctor lacinia turpis ultrices tempus. 
+          Ornare ullamcorper vivamus tellus leo elementum montes, quis imperdiet. Eget elit 
+          elementum gravida facilisi ac commodo elementum commodo. Tellus neque sagittis porttitor
+          luctus pretium quam. Ultrices diam hendrerit pulvinar sit magna eget adipiscing eget etiam. 
+          Sed rhoncus vivamus urna mauris. Velit malesuada viverra amet duis nunc eget turpis.
+        </p>
+      </div>
+      <button  
+        type="button" 
+        class="button button_large button_primary section__button">
+
+        Get involved
+      </button>
+    </div>
+
+    <img 
+      src="img/section/section-1.png"
+      alt="section image"
+      class="section__image"
+      width="734"
+      height="842"
+    >
+  </section>
+
+  <section class="collection collection_vertical wrapper">
+    <header class="header collection__header">
+
+      <h2 class="display_small heading_heavy header__heading">Our <span class="header__underline">Programs</span></h2>
+
+      <p class="paragraph_base paragraph_regular header__text">
+        Tortor sit nisl purus nunc massa diam velit hac in. Nisl,
+        sem adipiscing risus pulvinar non sed nullam id integer. 
+        Integer quis porttitor mauris arcu, pretium orci quam. 
+        Enim cursus mattis nunc aliquam pharetra feugiat ante sollicitudin. 
+      </p> 
+    </header>
+
+    <div class="collection__container">
+      <div class="card card_horizontal">
+        <img 
+          src="img/cards/card-image-8.png"
+          alt="card image"
+          class="card__image"
+          width="209"
+          height="209"
+        >
+
+        <div class="card__text">
+          <h3 class="heading_large heading_heavy">
+            Program name
+          </h3>
+
+          <p class="paragraph_sm paragraph_regular card__paragraph">
+            Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed quisque velit,
+            auctor at lobortis hac tincidunt sodales id. Elit interdum vel nisi, in enim sagittis at.
+            Netus sagittis eleifend aliquet urna quis.
+          </p>
+
+          <div class="card__buttons">
+            <div class="card__button-group">
+              <button  
+                type="button" 
+                class="button button_small button_primary card__button"
+              >
+                  small button
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card_horizontal">
+        <img 
+          src="img/cards/card-image-8.png"
+          alt="card image"
+          class="card__image"
+          width="209"
+          height="209"
+        >
+
+        <div class="card__text">
+          <h3 class="heading_large heading_heavy">
+            Program name
+          </h3>
+
+          <p class="paragraph_sm paragraph_regular card__paragraph">
+            Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed quisque velit,
+            auctor at lobortis hac tincidunt sodales id. Elit interdum vel nisi, in enim sagittis at.
+            Netus sagittis eleifend aliquet urna quis.
+          </p>
+
+          <div class="card__buttons">
+            <div class="card__button-group">
+              <button  
+                type="button" 
+                class="button button_small button_primary card__button"
+              >
+                  small button
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card_horizontal">
+        <img 
+          src="img/cards/card-image-8.png"
+          alt="card image"
+          class="card__image"
+          width="209"
+          height="209"
+        >
+
+        <div class="card__text">
+          <h3 class="heading_large heading_heavy">
+            Program name
+          </h3>
+
+          <p class="paragraph_sm paragraph_regular card__paragraph">
+            Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed quisque velit,
+            auctor at lobortis hac tincidunt sodales id. Elit interdum vel nisi, in enim sagittis at.
+            Netus sagittis eleifend aliquet urna quis.
+          </p>
+
+          <div class="card__buttons">
+            <div class="card__button-group">
+              <button  
+                type="button" 
+                class="button button_small button_primary card__button"
+              >
+                  small button
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card_horizontal">
+        <img 
+          src="img/cards/card-image-8.png"
+          alt="card image"
+          class="card__image"
+          width="209"
+          height="209"
+        >
+
+        <div class="card__text">
+          <h3 class="heading_large heading_heavy">
+            Program name
+          </h3>
+
+          <p class="paragraph_sm paragraph_regular card__paragraph">
+            Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed quisque velit,
+            auctor at lobortis hac tincidunt sodales id. Elit interdum vel nisi, in enim sagittis at.
+            Netus sagittis eleifend aliquet urna quis.
+          </p>
+
+          <div class="card__buttons">
+            <div class="card__button-group">
+              <button  
+                type="button" 
+                class="button button_small button_primary card__button"
+              >
+                  small button
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section_default">
+    <div class="section__text">
+      <h2 class="display_small heading_heavy section__heading">
+        We exist for <br> your success.
+      </h2>
+
+      <button  
+        type="button" 
+        class="button button_large button_primary section__button">
+
+        Our mission
+      </button>
+    </div>
+
+    <img 
+      src="img/section/section-2.png"
+      alt="section image"
+      class="section__image"
+      width="700"
+      height="700"
+    >
+  </section>
+
+  <section class="subscribe">
+    <h2 class="heading_xl heading_heavy subscribe__heading">
+      Say updated with the latest news!
+    </h2>
+
+    <form class="form form_horizontal">
+      <div class="input input_compact form__item">
+        <label class="paragraph_sm paragraph_heavy input__label" for="home-input-1">
+          Name
+          <span class="input__required">*</span>
+        </label>
+
+        <input 
+          type="text" 
+          name="text-input" 
+          placeholder="Jane Pollock"
+          class="input__body paragraph_heavy" 
+          id="home-input-1" 
+        />
+      </div>
+
+      <div class="input input_compact form__item">
+        <label class="paragraph_sm paragraph_heavy input__label" for="home-input-2">
+          Email address
+          <span class="input__required">*</span>
+        </label>
+
+        <input 
+          type="email" 
+          name="text-input" 
+          placeholder="jane@example.com"
+          class="input__body paragraph_heavy" 
+          id="home-input-2" 
+        />
+      </div>
+
+      <button 
+        type="button"
+        class="button button_medium button_primary form__button subscribe__button" 
+      >
+        Subscribe!
+      </button>
+    </form>
+  </section>
+
+  <section class="collection collection_vertical collection_inlined">
+    <header class="header collection__header">
+      <h3 class="heading_xxl heading_heavy header__heading">Our <span class="header__underline">Team</span></h3>
+
+      <p class="paragraph_base paragraph_regular header__text">
+        Tortor sit nisl purus nunc massa diam velit hac in. Nisl,
+        sem adipiscing risus pulvinar non sed nullam id integer. 
+        Integer quis porttitor mauris arcu, pretium orci quam. 
+        Enim cursus mattis nunc aliquam pharetra feugiat ante sollicitudin. 
+      </p> 
+
+      <button  
+        type="button" 
+        class="button button_large button_primary collection__button">
+
+        All team members
+      </button>
+    </header>
+
+    <div class="collection__container">
+      <div class="card collection__card">
+        <img 
+          src="img/cards/card-image-9.png"
+          alt="card image"
+          class="card__image collection__image"
+          width="104"
+          height="104"
+        >
+
+        <div class="card__text collection__text">
+          <h3 class="heading_md heading_heavy collection__heading">
+            Dianne Russell
+          </h3>
+
+          <h3 class="caps caps_regular card__heading">
+            Megan Eastman
+          </h3>
+        </div>
+      </div>
+
+      <div class="card collection__card">
+        <img 
+          src="img/cards/card-image-10.png"
+          alt="card image"
+          class="card__image collection__image"
+          width="104"
+          height="104"
+        >
+
+        <div class="card__text collection__text">
+          <h3 class="heading_md heading_heavy collection__heading">
+            Leslie Alexander
+          </h3>
+
+          <h3 class="caps caps_regular card__heading">
+            Megan Eastman
+          </h3>
+        </div>
+      </div>
+
+      <div class="card collection__card">
+        <img 
+          src="img/cards/card-image-11.png"
+          alt="card image"
+          class="card__image collection__image"
+          width="104"
+          height="104"
+        >
+
+        <div class="card__text collection__text">
+          <h3 class="heading_md heading_heavy collection__heading">
+            Esther Howard
+          </h3>
+
+          <h3 class="caps caps_regular card__heading">
+            Megan Eastman
+          </h3>
+        </div>
+      </div>
+
+      <div class="card collection__card">
+        <img 
+          src="img/cards/card-image-12.png"
+          alt="card image"
+          class="card__image collection__image"
+          width="104"
+          height="104"
+        >
+
+        <div class="card__text collection__text">
+          <h3 class="heading_md heading_heavy collection__heading">
+            Jacob Jones
+          </h3>
+
+          <h3 class="caps caps_regular card__heading">
+            Megan Eastman
+          </h3>
+        </div>
+      </div>
+
+      <div class="card collection__card">
+        <img 
+          src="img/cards/card-image-10.png"
+          alt="card image"
+          class="card__image collection__image"
+          width="104"
+          height="104"
+        >
+
+        <div class="card__text collection__text">
+          <h3 class="heading_md heading_heavy collection__heading">
+            Esther Howard
+          </h3>
+
+          <h3 class="caps caps_regular card__heading">
+            Megan Eastman
+          </h3>
+        </div>
+      </div>
+
+      <div class="card collection__card">
+        <img 
+          src="img/cards/card-image-9.png"
+          alt="card image"
+          class="card__image collection__image"
+          width="104"
+          height="104"
+        >
+
+        <div class="card__text collection__text">
+          <h3 class="heading_md heading_heavy collection__heading">
+            Jacob Jones
+          </h3>
+
+          <h3 class="caps caps_regular card__heading">
+            Megan Eastman
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="collection wrapper">
+    <header class="header collection__header">
+
+      <h2 class="display_small heading_heavy header__heading">The <span class="header__underline">Blog</span></h2>
+
+      <p class="paragraph_base paragraph_regular header__text">
+        Tortor sit nisl purus nunc massa diam velit hac in. Nisl,
+        sem adipiscing risus pulvinar non sed nullam id integer. 
+        Integer quis porttitor mauris arcu, pretium orci quam. 
+        Enim cursus mattis nunc aliquam pharetra feugiat ante sollicitudin. 
+      </p> 
+    </header>
+
+    <div class="collection__container">
+      <div class="card">
+        <img 
+          src="img/cards/card-image-4.png"
+          alt="card image"
+          class="card__image"
+          width="289"
+          height="217"
+        >
+
+        <div class="card__text">
+          <h3 class="caps caps_heavy card__heading">
+            Blog
+          </h3>
+
+          <h4 class="heading_sm heading_heavy">
+            Blog Title
+          </h4>
+
+          <p class="paragraph_sm paragraph_regular card__paragraph">
+            Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed quisque velit,
+            auctor at lobortis hac tincidunt sodales id. Elit interdum vel nisi, in enim sagittis at.
+            Netus sagittis eleifend aliquet urna quis.
+          </p>
+
+          <div class="card__buttons">
+            <div class="card__button-group">
+              <button  
+                type="button" 
+                class="button button_small button_primary card__button"
+              >
+                  read now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img 
+          src="img/cards/card-image-5.png"
+          alt="card image"
+          class="card__image"
+          width="289"
+          height="217"
+        >
+
+        <div class="card__text">
+          <h3 class="caps caps_heavy card__heading">
+            Blog
+          </h3>
+
+          <h4 class="heading_sm heading_heavy">
+            Blog Title
+          </h4>
+
+          <p class="paragraph_sm paragraph_regular card__paragraph">
+            Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed quisque velit,
+            auctor at lobortis hac tincidunt sodales id. Elit interdum vel nisi, in enim sagittis at.
+            Netus sagittis eleifend aliquet urna quis.
+          </p>
+
+          <div class="card__buttons">
+            <div class="card__button-group">
+              <button  
+                type="button" 
+                class="button button_small button_primary card__button"
+              >
+                  read now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img 
+          src="img/cards/card-image-6.png"
+          alt="card image"
+          class="card__image"
+          width="289"
+          height="217"
+        >
+
+        <div class="card__text">
+          <h3 class="caps caps_heavy card__heading">
+            Blog
+          </h3>
+
+          <h4 class="heading_sm heading_heavy">
+            Blog Title
+          </h4>
+
+          <p class="paragraph_sm paragraph_regular card__paragraph">
+            Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed quisque velit,
+            auctor at lobortis hac tincidunt sodales id. Elit interdum vel nisi, in enim sagittis at.
+            Netus sagittis eleifend aliquet urna quis.
+          </p>
+
+          <div class="card__buttons">
+            <div class="card__button-group">
+              <button  
+                type="button" 
+                class="button button_small button_primary card__button"
+              >
+                  read now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img 
+          src="img/cards/card-image-13.png"
+          alt="card image"
+          class="card__image"
+          width="289"
+          height="217"
+        >
+
+        <div class="card__text">
+          <h3 class="caps caps_heavy card__heading">
+            Blog
+          </h3>
+
+          <h4 class="heading_sm heading_heavy">
+            Blog Title
+          </h4>
+
+          <p class="paragraph_sm paragraph_regular card__paragraph">
+            Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed quisque velit,
+            auctor at lobortis hac tincidunt sodales id. Elit interdum vel nisi, in enim sagittis at.
+            Netus sagittis eleifend aliquet urna quis.
+          </p>
+
+          <div class="card__buttons">
+            <div class="card__button-group">
+              <button  
+                type="button" 
+                class="button button_small button_primary card__button"
+              >
+                  read now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button  
+      type="button" 
+      class="button button_large button_primary collection__button">
+
+      All blog posts
+    </button>
+  </section>
+
+  <section class="carousel">
+    <div class="carousel__gallery">
+      <img 
+        src="img/carousel/carousel-1.png"
+        alt="carousel image"
+        class="carousel__image"
+        width="699"
+        height="525"
+      >
+
+      <img 
+        src="img/carousel/carousel-2.png"
+        alt="carousel image"
+        class="carousel__image"
+        width="699"
+        height="525"
+      >
+
+      <img 
+        src="img/carousel/carousel-3.png"
+        alt="carousel image"
+        class="carousel__image"
+        width="699"
+        height="525"
+      >
+    </div>
+
+    <div class="carousel-group">
+      <button
+        type="button" 
+        class="button button_square button_small button_primary button_rounded carousel__button carousel__button_left"
+      >
+        <i class="button__icon fa-solid fa-arrow-left"></i>
+      </button>
+
+      <button
+        type="button" 
+        class="button button_square button_small button_primary button_rounded carousel__button carousel__button_right"
+      >
+        <i class="button__icon fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </section>
+{% endblock %}
+   

@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Lato:wght@400;700&display=swap");
+
+/* Font-family */
+$font-primary: "Josefin Sans", sans-serif;
+$font-secondary: "Source Sans Pro", sans-serif;
+
+/* Display large font-style */
+$font-display-large: (
+  size-mobile: rem(48px),
+  heights-mobile: 0.92,
+  size-tablet: rem(89px),
+  heights-tablet: 0.86,
+  size-desktop: rem(107px),
+  heights-desktop: 0.97
+);
+
+/* Display small font-style */
+$font-display-small: (
+  size-mobile: rem(41px),
+  heights-mobile: 0.97,
+  size-tablet: rem(72px),
+  heights-tablet: 1,
+  size-desktop: rem(86px),
+  heights-desktop: 1.02
+);
+
+/* Heading xxl font-style */
+$font-heading-xxl: (
+  size-mobile: rem(32px),
+  heights-mobile: 1.12,
+  size-tablet: rem(48px),
+  heights-tablet: 1.17,
+  size-desktop: rem(55px),
+  heights-desktop: 1.02
+);
+
+/* Heading xl font-style */
+$font-heading-xl: (
+  size-mobile: rem(29px),
+  heights-mobile: 1.1,
+  size-tablet: rem(39px),
+  heights-tablet: 1.02,
+  size-desktop: rem(44px),
+  heights-desktop: 1.1
+);
+
+/* Heading large font-style */
+$font-heading-large: (
+  size-mobile: rem(26px),
+  heights-mobile: 1.23,
+  size-tablet: rem(32px),
+  heights-tablet: 1.12,
+  size-desktop: rem(35px),
+  heights-desktop: 1.14
+);
+
+/* Heading md font-style */
+$font-heading-md: (
+  size-mobile: rem(22.5px),
+  heights-mobile: 1.24,
+  size-tablet: rem(26px),
+  heights-tablet: 1.23,
+  size-desktop: rem(28px),
+  heights-desktop: 1.14
+);
+
+/* Heading sm font-style */
+$font-heading-sm: (
+  size-mobile: rem(20px),
+  heights-mobile: 1.2,
+  size-tablet: rem(22px),
+  heights-tablet: 1.27,
+  size-desktop: rem(22.5px),
+  heights-desktop: 1.24
+);
+
+/* Heading xs font-style */
+$font-heading-xs: rem(20px);
+$heights-heading-xxl: 1.55;
+
+/* Headings font-weights */
+$weight-heading-heavy: 700;
+$weight-heading-regular: 600;
+$weight-heading-light: 300;
+
+/* Paragraph primary font-style */
+$font-paragraph-large: (
+  size-mobile: rem(22.5px),
+  heights-mobile: 1.23,
+  size-tablet: rem(26px),
+  heights-tablet: 1.23,
+  size-desktop: rem(28px),
+  heights-desktop: 1.28
+);
+
+/* Paragraphs font-sizes */
+$font-paragraph-lg: rem(18px);
+$font-paragraph-md: rem(16px);
+$font-paragraph-sm: rem(14px);
+$font-paragraph-xs: rem(12px);
+
+/* Paragraphs line-heights */
+$heights-paragraph-lg: 1.55;
+$heights-paragraph-md: 1.5;
+$heights-paragraph-sm: 1.42;
+$heights-paragraph-xs: 1.33;
+
+/* Paragraphs font-weights */
+$weight-paragraph-heavy: 600;
+$weight-paragraph-regular: 400;
+$weight-paragraph-light: 300;
+
+/* Caps font-styles */
+$font-caps-primary: rem(18px);
+$font-caps-secondary: rem(14px);
+$heights-caps: 1.11;
+$weight-caps-heavy: 700;
+$weight-caps-regular: 700;
+$weight-caps-light: 300;
+
+/* Link font-styles */
+$font-link-large: rem(18px);
+$font-link-medium: rem(16px);
+$font-link-small: rem(14px);
+$heights-link-lg: 1.78;
+$heights-link-md: 1.55;
+$heights-link-sm: 1.42;
+$weight-link: 700;
+
+/* Button font-styles */
+$font-buttons-xl: rem(20px);
+$font-buttons-lg: rem(18px);
+$font-buttons-md: rem(16px);
+$font-buttons-sm: rem(14px);
+$heights-buttons-xl: 1.55;
+$heights-buttons-lg: 1.5;
+$heights-buttons-md: 1.43;
+$heights-buttons-sm: 1.4;
+$weight-button: 700;
+
+/* Allert font-styles */
+$font-allert: rem(18px);
+$heights-allert: 1.55;
+$weight-allert: 400;
+
+/* Avatar font-styles */
+$font-avatar-lg: rem(18px);
+$heights-avatar-lg: 1.55;
+$font-avatar-md: rem(16px);
+$heights-avatar-md: 1.5;
+$font-avatar-sm: rem(14px);
+$heights-avatar-sm: 1.42;
+$font-avatar-xs: rem(12px);
+$heights-avatar-xs: 1.33;
+$weight-avatar: 600;
+
+/* Badge font-styles */
+$font-badge: rem(16px);
+$heights-badge: 1.5;
+$weight-badge: 600;
+
+/* Tag font-styles */
+$font-tag: rem(18px);
+$heights-tag: 1.11;
+$weight-tag: 700;
+
+/* Card font-styles */
+$font-card-price-large: rem(28px);
+$heights-card-price-large: 1.14;
+$font-card-price: rem(18px);
+$heights-card-price: 1.55;
+$weight-card-price: 700;
+$font-card-caption: rem(16px);
+$heights-card-caption: 1.5;
+$weight-card-caption: 400;
+
+/* Checkbox font-styles */
+$font-checkbox: rem(16px);
+$heights-checkbox: 1.5;
+$weight-checkbox: 600;
+
+/* Chip font-styles */
+$font-chip-large: rem(20px);
+$heights-chip-large: 1.4;
+$font-chip-medium: rem(16px);
+$heights-chip-medium: 1.5;
+$font-chip-small: rem(14px);
+$heights-chip-small: 1.43;
+$weight-chip: 700;
+
+/* Message font-styles */
+$font-message: rem(16px);
+$heights-message: 1.5;
+$weight-message: 400;
+
+/* Modal font-styles */
+$font-modal: rem(22.5px);
+$heights-modal: 1.24;
+$weight-modal: 700;
+
+/* Notification font-styles */
+$font-notification: rem(24px);
+
+/* Radio font-styles */
+$font-radio: rem(16px);
+$heights-radio: 1.5;
+$weight-radio: 600;
+
+/* Search font-styles */
+$font-search-large: rem(28px);
+$heights-search-large: 1.29;
+$font-search-medium: rem(16px);
+$heights-search-medium: 1.5;
+$font-search-small: rem(16px);
+$heights-search-small: 1.5;
+$weight-search: 400;
+
+/* Status font-styles */
+$font-status: rem(12px);
+$heights-status: 1.66;
+$weight-status: 500;
+
+/* Tab font-styles */
+$font-tab: rem(16px);
+$heights-tab: 1.5;
+$weight-tab: 700;
+
+/* Table font-styles */
+$font-table: rem(16px);
+$heights-table: 1.5;
+$weight-table-heavy: 600;
+$weight-table-regular: 400;
+
+/* Toggle font-styles */
+$font-toggle: rem(16px);
+$heights-toggle: 1.5;
+$weight-toggle: 700;
+
+/* Scroll button font-styles */
+$font-scroll-button: rem(16px);
+$heights-scroll-button: 1.5;
+$weight-scroll-button: 600;
+
+/* Counter font-styles */
+$font-counter: rem(16px);
+$heights-counter: 1.5;
+$weight-counter: 700;
+
+/* Slider font-styles */
+$font-slider: rem(16px);
+$heights-slider: 1.5;
+$weight-slider: 400;

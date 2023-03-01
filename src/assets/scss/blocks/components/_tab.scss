@@ -1,0 +1,90 @@
+.tab {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: $neutral-3;
+  padding: 0 1rem 0.63rem;
+  border-bottom: 1px solid $neutral-7;
+
+  @include font-attributes(
+    $font-size: $font-tab,
+    $line-height: $heights-tab,
+    $font-weight: $weight-tab
+  );
+
+  --icon-color: #{$neutral-3};
+
+  &__text {
+    margin-right: 0.25rem;
+  }
+
+  &:hover {
+    border-bottom: 0.19rem solid $primary;
+
+    .tab__text {
+      color: $primary-hover;
+    }
+  }
+
+  /* Vertical */
+  &_vertical {
+    padding: 0.63rem 0 0.63rem 1rem;
+    border: {
+      bottom: none;
+      left: 1px solid $neutral-7;
+    }
+
+    --icon-color: #{$primary};
+
+    &:hover {
+      border-bottom: inherit;
+      border-left: 0.19rem solid $primary;
+    }
+  }
+
+  /* Active */
+  &_active {
+    border-color: $primary;
+    border-width: 0.19rem;
+
+    .tab__text {
+      color: $primary;
+    }
+
+    .tab__icon {
+      color: var(--icon-color);
+    }
+  }
+
+  /* Icon left */
+  &_left {
+    flex-direction: row-reverse;
+
+    .tab__text {
+      margin: {
+        right: 0;
+        left: 0.25rem;
+      }
+    }
+  }
+
+  /* Icon top */
+  &_top {
+    flex-direction: column-reverse;
+
+    .tab__text {
+      margin: 0;
+    }
+  }
+
+  /* No icon */
+  &_iconless {
+    .tab__icon {
+      display: none;
+    }
+
+    .tab__text {
+      margin: 0;
+    }
+  }
+}

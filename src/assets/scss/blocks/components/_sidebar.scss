@@ -1,0 +1,24 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: $primary;
+  padding: 1rem;
+  width: 30rem;
+  font-size: 1.5rem;
+
+  &__item {
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+
+  &__link {
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    margin: auto -1rem 0;
+    padding: 1rem;
+    background: $primary;
+    color: $white;
+    border-radius: 1.5rem;
+  }
+}

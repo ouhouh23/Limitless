@@ -1,0 +1,50 @@
+.form {
+  &__heading {
+    color: $primary;
+    text-align: center;
+  }
+
+  &__item {
+    margin-top: 0.5rem;
+  }
+
+  &__button {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  &_horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 576px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .form__item {
+      flex-grow: 1;
+
+      margin: {
+        top: 0;
+        bottom: 1rem;
+      }
+
+      @media screen and (min-width: 576px) {
+        margin: {
+          bottom: 0;
+          right: 1rem;
+        }
+      }
+    }
+
+    .form__button {
+      margin-top: 0.5rem;
+
+      @media screen and (min-width: 576px) {
+        max-width: 33%;
+      }
+    }
+  }
+}

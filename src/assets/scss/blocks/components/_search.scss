@@ -1,0 +1,118 @@
+.search {
+  position: relative;
+
+  &__body {
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    background: $neutral-9;
+
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+
+    &::placeholder {
+      color: $black;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    color: $neutral-5;
+    cursor: pointer;
+  }
+
+  /* Search small */
+  &_small {
+    --search-top-indent: 0.63rem;
+    --search-side-indent: 1rem;
+    --search-close-indent: 1.75rem;
+    --search-padding-left: 2.5rem;
+
+    .search__body {
+      padding: 0.5rem 1rem;
+
+      @include font-attributes(
+        $font-size: $font-search-small,
+        $line-height: $heights-search-small,
+        $font-weight: $weight-search
+      );
+    }
+  }
+
+  /* Search medium */
+  &_medium {
+    --search-top-indent: 0.75rem;
+    --search-side-indent: 1rem;
+    --search-close-indent: 2rem;
+    --search-padding-left: 2.75rem;
+
+    .search__body {
+      padding: 0.75rem 1rem;
+
+      @include font-attributes(
+        $font-size: $font-search-medium,
+        $line-height: $heights-search-medium,
+        $font-weight: $weight-search
+      );
+    }
+
+    .search__icon {
+      font-size: 1.25rem;
+    }
+  }
+
+  /* Search large */
+  &_large {
+    --search-top-indent: 1.3rem;
+    --search-side-indent: 1.5rem;
+    --search-close-indent: 2.5rem;
+    --search-padding-left: 4rem;
+
+    .search__body {
+      padding: 1rem 1.5rem;
+
+      @include font-attributes(
+        $font-size: $font-search-large,
+        $line-height: $heights-search-large,
+        $font-weight: $weight-search
+      );
+    }
+
+    .search__icon {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Search right */
+  &_right {
+    .search__icon {
+      top: var(--search-top-indent);
+      right: var(--search-side-indent);
+
+      &_closed {
+        margin-right: var(--search-close-indent);
+      }
+    }
+  }
+
+  /* Search left */
+  &_left {
+    .search__body {
+      padding-left: var(--search-padding-left);
+    }
+
+    .search__icon {
+      top: var(--search-top-indent);
+
+      &_closed {
+        right: var(--search-side-indent);
+      }
+
+      &_submit {
+        left: var(--search-side-indent);
+      }
+    }
+  }
+}

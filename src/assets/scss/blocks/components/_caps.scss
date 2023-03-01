@@ -1,0 +1,18 @@
+.caps {
+  text-transform: uppercase;
+  font-size: $font-caps-secondary;
+  line-height: $heights-caps;
+
+  &_heavy {
+    font-size: $font-caps-primary;
+    font-weight: $weight-caps-heavy;
+  }
+
+  &_regular {
+    font-weight: $weight-caps-regular;
+  }
+
+  &_light {
+    font-weight: $weight-caps-light;
+  }
+}

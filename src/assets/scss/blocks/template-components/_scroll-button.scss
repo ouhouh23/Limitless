@@ -1,0 +1,20 @@
+.scroll-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: fit-content;
+
+  &__icon {
+    margin-right: 0.63rem;
+  }
+
+  &__text {
+    color: $primary;
+
+    @include font-attributes(
+      $font-size: $font-scroll-button,
+      $line-height: $heights-scroll-button,
+      $font-weight: $weight-scroll-button
+    );
+  }
+}

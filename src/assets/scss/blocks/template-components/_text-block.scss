@@ -1,0 +1,22 @@
+.text-block {
+  color: $neutral-2;
+
+  &__heading {
+    text-align: left;
+    color: $black;
+  }
+
+  &__text {
+    margin-top: 0.63rem;
+  }
+
+  &_light {
+    .text-block__heading {
+      color: $white;
+    }
+
+    .text-block__text {
+      color: #fffc;
+    }
+  }
+}

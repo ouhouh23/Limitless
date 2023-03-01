@@ -1,0 +1,97 @@
+.footer {
+  padding: 1.5rem 2.5rem 0.32rem 2rem;
+  border-bottom: 3px solid $primary;
+  background: $white;
+  margin-top: auto;
+
+  &__icon-group {
+    margin: 0 auto 2rem;
+
+    @media screen and (min-width: 950px) {
+      margin: 0 2.5rem 0 0;
+    }
+  }
+
+  &__icons {
+    text-align: center;
+    margin-top: 1.5rem;
+
+    @media screen and (min-width: 950px) {
+      padding-left: 1.2rem;
+      max-width: 15rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__container {
+    display: flex;
+    margin-bottom: 3.5rem;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 950px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 35rem;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @media screen and (min-width: 576px) {
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: 950px) {
+      margin-left: 0;
+      text-align: left;
+    }
+  }
+
+  &__group {
+    @media screen and (min-width: 950px) {
+      margin-left: 2rem;
+    }
+  }
+
+  &__form {
+    width: 19rem;
+    margin: 0 auto;
+
+    @media screen and (min-width: 576px) {
+      margin-top: 2rem;
+    }
+
+    @media screen and (min-width: 950px) {
+      margin: 0 0 0 2rem;
+    }
+  }
+
+  &__link {
+    margin-bottom: 1.19rem;
+    color: #443b39;
+    white-space: nowrap;
+
+    &_primary {
+      color: $primary;
+    }
+  }
+
+  .footer__heading {
+    color: $neutral-2;
+    margin-top: 2rem;
+
+    @media screen and (min-width: 576px) {
+      margin-top: 0;
+    }
+  }
+
+  &__copyrights {
+    color: $neutral-2;
+    text-align: center;
+  }
+}

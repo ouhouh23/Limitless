@@ -1,0 +1,33 @@
+%active-item {
+  padding-left: 1rem;
+  border-left: 0.25rem solid $primary;
+  margin-left: -1.25rem;
+}
+
+%indicator {
+  content: "";
+  background: $error;
+  border-radius: 50%;
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  top: -2px;
+  right: -2px;
+}
+
+%border-beak {
+  content: "";
+  border: solid $neutral-7;
+  border-width: 0 1px 1px 0;
+  position: absolute;
+  background: $white;
+}
+
+%section-indent {
+  padding: 2.5rem 0;
+  margin: 0 auto;
+
+  @media screen and (min-width: 576px) {
+    padding: 5rem 0;
+  }
+}

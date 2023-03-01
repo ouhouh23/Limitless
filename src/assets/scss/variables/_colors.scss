@@ -1,0 +1,93 @@
+/* Primary colors */
+$primary: #ec6041;
+$primary-hover: #ee7458;
+$primary-disabled: #ef7458;
+$primary-light-90: #ec6041e5;
+$primary-light-80: #ec6041cc;
+$primary-light-70: #ec6041b2;
+$primary-light-60: #ec604199;
+$primary-light-50: #ec604180;
+$primary-light-40: #ec604166;
+$primary-light-30: #ec60414d;
+$primary-light-20: #ec604133;
+$primary-light-10: #ec60411a;
+
+/* Secondary colors */
+$secondary: #b2421a;
+$secondary-default: #b24219;
+$secondary-hover: #a63d17;
+$secondary-active: #993915;
+$secondary-disabled: #d26544;
+$secondary-light-90: #b2421ae5;
+$secondary-light-80: #b2421acc;
+$secondary-light-70: #b2421ab2;
+$secondary-light-60: #b2421a99;
+$secondary-light-50: #b2421a80;
+$secondary-light-40: #b2421a66;
+$secondary-light-30: #b2421a4d;
+$secondary-light-20: #b2421a33;
+$secondary-light-10: #b2421a1a;
+
+/* Neutral colors */
+$black: #121212;
+$neutral-1: #1c1c1c;
+$neutral-2: #414141;
+$neutral-3: #848484;
+$neutral-4: #9b9b9b;
+$neutral-5: #aeaeae;
+$neutral-6: #c0c0c0;
+$neutral-7: #d1d1d1;
+$neutral-8: #e0e0e0;
+$neutral-9: #eee;
+$neutral-default: #414141;
+$neutral-hover: #858c94;
+$neutral-active: #798087;
+$neutral-disabled: #909ba1;
+$neutral-hover: #6d7580;
+$white: #fff;
+
+/* Accent colors */
+$accent-1: #ecb2f2;
+$accent-2: #2d6a6a;
+$accent-3: #e9ad8c;
+$accent-4: #221874;
+$accent-5: #7cc6d6;
+$accent-6: #e1604d;
+$accent-7: #5e38ba;
+
+/* State colors */
+$success: #287d3c;
+$success-light: #edf9f0;
+$warning: #b95000;
+$warning-light: #fff4ec;
+$error: #da1414;
+$error-light: #feefef;
+$info: #2e5aac;
+$info-light: #eef2fa;
+
+/* Elevatios */
+$elevation-tight-1: 0 1px 0.18rem #0000004d;
+$elevation-tight-2: 0 1px 0.25rem #00000040;
+$elevation-tight-3: 0 0.12rem 0.38rem #00000038;
+$elevation-tight-4: 0 0.12rem 0.44rem #0000003d;
+$elevation-tight-5: 0 0.18rem 0.75rem #0003;
+$elevation-tight-6: 0 0.18rem 0.88rem #0003;
+$elevation-tight-7: 0 0.43rem 1.12rem #0000002b;
+$elevation-tight-8: 0 0.75rem 1.75rem #0003;
+$elevation-tight-9: 0 0.81rem 2.25rem #00000038;
+
+/* Elevatios fluffy */
+$elevation-fluffy-1: 0 0.31rem 0.94rem #00000026;
+$elevation-fluffy-2: 0 0.38rem 1.25rem #00000020;
+$elevation-fluffy-3: 0 0.63rem 1.88rem #0000001c;
+$elevation-fluffy-4: 0 0.63rem 2.18rem #0000001f;
+$elevation-fluffy-5: 0 0.93rem 3.75rem #0000001f;
+$elevation-fluffy-6: 0 1.06rem 4.37rem #0000001f;
+$elevation-fluffy-7: 0 2.18rem 5.62rem #0002;
+
+/* Filter colors */
+$filter-color-neutral: invert(58%) sepia(4%) saturate(29%) hue-rotate(314deg) brightness(88%) contrast(102%);
+$filter-color-success: invert(38%) sepia(19%) saturate(1481%) hue-rotate(82deg) brightness(98%) contrast(91%);
+$filter-color-warning: invert(30%) sepia(90%) saturate(1343%) hue-rotate(10deg) brightness(93%) contrast(103%);
+$filter-color-error: invert(19%) sepia(95%) saturate(2945%) hue-rotate(353deg) brightness(89%) contrast(96%);
+$filter-color-info: invert(31%) sepia(10%) saturate(6386%) hue-rotate(190deg) brightness(99%) contrast(91%);

@@ -1,0 +1,39 @@
+.status {
+  display: inline-flex;
+  color: $neutral-3;
+  margin-left: 0.5rem;
+
+  @include font-attributes(
+    $font-size: $font-status,
+    $line-height: $heights-status,
+    $font-weight: $weight-status
+  );
+
+  &::before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background: $neutral-3;
+    border-radius: 50%;
+    margin: {
+      top: 0.19rem;
+      right: 0.5rem;
+    }
+  }
+
+  &_success::before {
+    background: $success;
+  }
+
+  &_warning::before {
+    background: $warning;
+  }
+
+  &_error::before {
+    background: $error;
+  }
+
+  &_info::before {
+    background: $info;
+  }
+}

@@ -1,0 +1,116 @@
+/*
+ *Navigation container block
+ */
+.navigation-container {
+  background: $white;
+
+  --navigation-gradient: linear-gradient(#ffffff4d, #fff0);
+
+  &_dark {
+    background: $black;
+
+    --navigation-gradient: linear-gradient(#0000004d, #00000021, #0000);
+
+    .navigation__item {
+      color: $white;
+
+      &_active {
+        color: $primary;
+      }
+    }
+  }
+
+  &_transparent {
+    background: var(--navigation-gradient);
+  }
+}
+
+/*
+ *Navigation block
+ */
+.navigation {
+  padding: 1.13rem 1rem;
+  max-width: 81.6rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  &__group {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+
+    @media screen and (max-width: 950px) {
+      display: none;
+    }
+  }
+
+  &__container {
+    margin: 0 auto;
+  }
+
+  &__menu {
+    display: flex;
+    margin: 0 2.12rem;
+  }
+
+  &__item {
+    margin-right: 2.12rem;
+    color: $neutral-default;
+    white-space: nowrap;
+
+    &_active {
+      color: $primary;
+    }
+  }
+
+  &__mobile-button {
+    color: $primary;
+    cursor: pointer;
+    align-self: center;
+    margin-left: auto;
+
+    @media screen and (min-width: 951px) {
+      display: none;
+    }
+  }
+
+  &_mobile {
+    @media screen and (max-width: 950px) {
+      .navigation__group {
+        position: absolute;
+        right: 1rem;
+        top: 4.4rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        border: 1px solid $black;
+        border-radius: 1rem;
+        box-shadow: $elevation-tight-2;
+        background: $white;
+        z-index: 10;
+
+        .navigation__item {
+          color: $black;
+        }
+      }
+
+      .navigation__menu {
+        flex-direction: column;
+        margin: 0;
+      }
+
+      .navigation__item {
+        margin: {
+          right: 0;
+          bottom: 1rem;
+        }
+      }
+
+      .navigation__button {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+
+  &__image {
+    filter: invert(52%) sepia(79%) saturate(3621%) hue-rotate(338deg) brightness(100%) contrast(86%);
+    margin-right: 0.75rem;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-family: Lato, sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: $primary;
+  }
+
+  &_light {
+    .logo__image {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(43deg) brightness(104%) contrast(101%);
+    }
+
+    .logo__text {
+      color: $white;
+    }
+  }
+
+  &_small {
+    .logo__image {
+      width: 2.2rem;
+      height: 2.2rem;
+      margin-right: 0.62rem;
+    }
+
+    .logo__text {
+      font-size: 1.62rem;
+    }
+  }
+}

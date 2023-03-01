@@ -1,0 +1,46 @@
+.offer {
+  background: $secondary;
+
+  &__container {
+    @extend %section-indent;
+
+    max-width: 49rem;
+
+    padding: {
+      left: 1rem;
+      right: 1rem;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+    color: $white;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+
+    @media screen and (min-width: 576px) {
+      flex-direction: row;
+      justify-content: center;
+      margin: 0;
+    }
+  }
+
+  &__button {
+    margin-top: 1.56rem;
+
+    @media screen and (min-width: 576px) {
+      font-size: $font-buttons-xl;
+      line-height: $heights-buttons-sm;
+      padding: 1.06rem 1.31rem;
+      margin-right: 2.5rem;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

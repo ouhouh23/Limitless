@@ -1,0 +1,10 @@
+.container {
+  @extend %section-indent;
+
+  max-width: 49.7rem;
+
+  padding: {
+    left: 2rem;
+    right: 1rem;
+  }
+}
